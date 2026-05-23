@@ -1,0 +1,21 @@
+Simulated Transcript of Interview:
+
+Stakeholder 1 (School Security Personnel):
+“Being a security guard in the entrance places a lot of pressure, especially
+the ratio of student to guard outweighs an individual capability. Checking for
+violations, checking student’s bags, handing out logbooks, and verifying the
+information consumes a lot of time which leads to a line that extends out on the
+street. Furthermore, as lines form outside, students are placed in hazardous
+areas; students complain which leads to chaos and eventually system failure.
+Hence, improvements in the current process are essential for an efficient flow of
+data.”
+Stakeholder 2 (OSA Staff Members):
+“As part of the Office of Student Affairs, it is our responsibility to monitor
+student’s activities. Part of it is retrieving the logbooks from the security
+personnel and deciphering the messy handwritings, then manually encoding it
+into our tracking sheets. This current process poses a lot of potential human
+errors and risks, especially that this logbook contains sensitive data of students
+which authorized personnel should only have access to. Additionally, since this
+data should be accurate, we expect that the guards are duly checking the
+students information to have the system reflect the actual record and status of
+students’ behavior and sanctions.”
