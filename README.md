@@ -136,4 +136,4 @@ Press F5 or click the primary Start execution control button to spin up the appl
 
 Log into the system using the pre-seeded account parameters provided within the relational data dictionaries to bypass access guards and populate the active WinForms user interfaces.
 
-Developed as a Capstone Synthesis Semestral Requirement for IT Elective 1 (ITELEC1) — National Teachers College.
+Developed as a Cyclical Requirement for IT Elective 1 (ITELEC1) — National Teachers College.
