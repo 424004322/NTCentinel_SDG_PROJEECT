@@ -77,63 +77,64 @@ To clone the source code repository and its complete tracking tree onto your loc
 2. Verify that Git is installed on your computer system by typing the following validation command and pressing Enter:
    ```bash
    git --version
-Navigate to the local directory pathway where you want to store the project folder (for example, your Documents or Development folder) using the change directory (cd) command:
+3. Navigate to the local directory pathway where you want to store the project folder (for example, your Documents or Development folder) using the change directory (cd) command:
+   ```bash
+   cd C:\Users\YourUsername\Documents
+   
+4. Copy the official repository URL link from your GitHub page interface.
 
-Bash
-cd C:\Users\YourUsername\Documents
-Copy the official repository URL link from your GitHub page interface.
+5. Execute the standard git clone expression, appending your copied URL link string:
 
-Execute the standard git clone expression, appending your copied URL link string:
+   ```bash
+   git clone [https://github.com/YOUR_GITHUB_USERNAME/Group11_SDG11_NTCentinel.git](https://github.com/YOUR_GITHUB_USERNAME/Group11_SDG11_NTCentinel.git)
 
-Bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/Group11_SDG11_NTCentinel.git](https://github.com/YOUR_GITHUB_USERNAME/Group11_SDG11_NTCentinel.git)
-Press Enter. Git will automatically establish communication with the remote server, initialize a local target folder named Group11_SDG11_NTCentinel, download the complete architecture history, and cleanly extract the project files.
+6. Press Enter. Git will automatically establish communication with the remote server, initialize a local target folder named Group11_SDG11_NTCentinel, download the complete architecture history, and cleanly extract the project files.
 
-Change your terminal workspace execution focus into the newly created folder by using:
-
-Bash
-cd Group11_SDG11_NTCentinel
+7. Change your terminal workspace execution focus into the newly created folder by using:
+   ```bash
+   cd Group11_SDG11_NTCentinel
+   
 Step 2: Importing the Relational SQL Script File
 To establish the tables, dependencies, and seed configurations inside your SQL Server instance, follow these instructions:
 
-Launch SQL Server Management Studio (SSMS).
+1. Launch SQL Server Management Studio (SSMS).
 
-Authenticate and connect to your target database engine instance (e.g., .\SQLEXPRESS or (localdb)\MSSQLLocalDB).
+2. Authenticate and connect to your target database engine instance (e.g., .\SQLEXPRESS or (localdb)\MSSQLLocalDB).
 
-Create a fresh, empty database shell by navigating to the Object Explorer sidebar, right-clicking on the Databases directory node, and selecting New Database. Name this database shell instance exactly: NTCentinel.
+3. Create a fresh, empty database shell by navigating to the Object Explorer sidebar, right-clicking on the Databases directory node, and selecting New Database. Name this database shell instance exactly: NTCentinel.
 
-From the top task toolbar menu, select File > Open > File...
+4. From the top task toolbar menu, select File > Open > File...
 
-In the browse directory prompt window, navigate into the cloned project folder pathway and open: DATABASE/Database_Script.sql.
+5. In the browse directory prompt window, navigate into the cloned project folder pathway and open: DATABASE/Database_Script.sql.
 
-Ensure that the active Database Selection dropdown controller located on the top left utility menu toolbar is set to point at your newly initialized NTCentinel database target (instead of the system master database).
+6. Ensure that the active Database Selection dropdown controller located on the top left utility menu toolbar is set to point at your newly initialized NTCentinel database target (instead of the system master database).
 
-Click the Execute command button or press F5 on your physical keyboard layout. Verify that the tracking output window logs a successful message array showing that all relations (Student_Table, Violation_Record_Table, User_Table, Violation_Type_Record) were bound correctly without execution errors.
+7. Click the Execute command button or press F5 on your physical keyboard layout. Verify that the tracking output window logs a successful message array showing that all relations (Student_Table, Violation_Record_Table, User_Table, Violation_Type_Record) were bound correctly without execution errors.
 
 Step 3: Configuring the Application Connection Pipeline
-Open your Microsoft Visual Studio software environment.
+1. Open your Microsoft Visual Studio software environment.
 
-Choose File > Open > Project/Solution... from the primary user menu grid.
+2. Choose File > Open > Project/Solution... from the primary user menu grid.
 
-Navigate into the CODE/ tracking directory of your local project repository copy, choose the primary visual file wrapper ProjectSolution.sln, and click Open.
+3. Navigate into the CODE/ tracking directory of your local project repository copy, choose the primary visual file wrapper ProjectSolution.sln, and click Open.
 
-Locate the configuration data module inside the Solution Explorer layout view window. Locate the primary system property file named App.config (or your dedicated database connection utility class module).
+4. Locate the configuration data module inside the Solution Explorer layout view window. Locate the primary system property file named App.config (or your dedicated database connection utility class module).
 
-Locate the XML <connectionStrings> parameter node array block and replace the value assigned to Data Source with your exact personal local SQL Server naming structure:
+5. Locate the XML <connectionStrings> parameter node array block and replace the value assigned to Data Source with your exact personal local SQL Server naming structure:
+   ```XML
+   <connectionStrings>
+       <add name="NTCentinelDB" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=NTCentinel;Integrated Security=True;" providerName="System.Data.SqlClient" />
+   </connectionStrings>
 
-XML
-<connectionStrings>
-    <add name="NTCentinelDB" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=NTCentinel;Integrated Security=True;" providerName="System.Data.SqlClient" />
-</connectionStrings>
 Step 4: Solution Compilation and System Launch
-Refresh compilation paths by navigating to the Build menu from the task header and selecting Clean Solution.
+1. Refresh compilation paths by navigating to the Build menu from the task header and selecting Clean Solution.
 
-Follow up immediately by choosing Rebuild Solution to process data objects and compile form components cleanly.
+2. Follow up immediately by choosing Rebuild Solution to process data objects and compile form components cleanly.
 
-Verify that the tracking compilation log reports no framework syntax errors, reference failures, or unresolved .NET packages.
+3. Verify that the tracking compilation log reports no framework syntax errors, reference failures, or unresolved .NET packages.
 
-Press F5 or click the primary Start execution control button to spin up the application window shell.
+4. Press F5 or click the primary Start execution control button to spin up the application window shell.
 
-Log into the system using the pre-seeded account parameters provided within the relational data dictionaries to bypass access guards and populate the active WinForms user interfaces.
+5. Log into the system using the pre-seeded account parameters provided within the relational data dictionaries to bypass access guards and populate the active WinForms user interfaces.
 
 Developed as a Cyclical Requirement for IT Elective 1 (ITELEC1) — National Teachers College.
